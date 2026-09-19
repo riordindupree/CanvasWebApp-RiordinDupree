@@ -5,6 +5,9 @@ Project Title and Description. A one- or two-sentence summary of what the tool d
 # Setup Instructions. 
 Step-by-step instructions for cloning the repo, installing dependencies, creating a .env file, and running the tool. Assume the reader has never used your language’s package manager before.
 
+Run in terminal by typing in the following:
+    ./mvnw spring-boot:run
+
 # API Endpoints Used. 
 A brief table or list describing which Canvas API endpoints your tool calls and what data it retrieves from each.
 

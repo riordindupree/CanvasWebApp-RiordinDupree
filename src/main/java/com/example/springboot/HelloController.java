@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-  @GetMapping("/")
+  /*@GetMapping("/")
   public String index() {
     return "<h5 class=\"text text-center text-success\">Hello World!</h5>";
-  }
+  }*/
 
 }
