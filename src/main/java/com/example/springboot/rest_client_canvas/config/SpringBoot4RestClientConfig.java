@@ -1,4 +1,4 @@
-package com.jta.rest_client_canvas.config;
+package com.example.springboot.rest_client_canvas.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +13,7 @@ public class SpringBoot4RestClientConfig {
     // get environment variable for canvas
     @Value("${CANVAS_BASE_URL}")
     private String baseUrlString;
-
+    
     @Value("${CANVAS_API_TOKEN}")
     private String apiTokenString;
 
