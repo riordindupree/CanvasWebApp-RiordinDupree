@@ -7,7 +7,7 @@ import org.springframework.web.client.support.RestClientHttpServiceGroupConfigur
 import org.springframework.web.service.registry.ImportHttpServices;
 
 @Configuration 
-@ImportHttpServices(group = "external-api", types = {CourseClient.class/*, AnnouncementClient.class*/}) 
+@ImportHttpServices(group = "external-api", types = {CourseClient.class, AnnouncementClient.class}) 
 public class SpringBoot4RestClientConfig {
     
     // get environment variable for canvas
