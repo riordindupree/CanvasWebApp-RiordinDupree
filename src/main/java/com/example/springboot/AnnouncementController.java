@@ -31,6 +31,12 @@ public class AnnouncementController {
         this.announcementClient = announcementClient;
     }
 
+    /**
+     * Combines courses and announcements to insert into announcments table
+     * @param courseIds : ids for courses
+     * @param model : data container for the view
+     * @return list of contents for announcements table
+     */
     @GetMapping("/")
     public String index(@RequestParam(required = false) List<Long> courseIds, Model model) {
         List<Course> courses = courseClient.getAllCourses(1, 100).stream()

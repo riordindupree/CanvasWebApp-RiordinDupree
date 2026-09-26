@@ -6,6 +6,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.support.RestClientHttpServiceGroupConfigurer;
 import org.springframework.web.service.registry.ImportHttpServices;
 
+/**
+ * Configures Canvas page based on .env file
+ * 
+ * SpringBoot4RestClientConfig
+ */
+
 @Configuration 
 @ImportHttpServices(group = "external-api", types = {CourseClient.class, AnnouncementClient.class}) 
 public class SpringBoot4RestClientConfig {

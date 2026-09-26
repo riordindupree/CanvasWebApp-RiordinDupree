@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Program takes announcments, and displays them at /api/proxy/users
+ * Program takes announcments, and displays them at /api/proxy/announcements
  * 
  * AnnouncementProxyController
  */
@@ -24,6 +24,11 @@ public class AnnouncementProxyController {
         this.announcementClient = announcementClient;
     }
 
+    /**
+     * Function returns announcements relevant to a selected course.
+     * @param courseIds : Ids for a course
+     * @return array list of announcements for a selected course
+     */
     @GetMapping("/announcements")
     public List<Announcement> getAnnouncementsForSelectedCourses(
         @RequestParam("courseIds") List<Long> courseIds

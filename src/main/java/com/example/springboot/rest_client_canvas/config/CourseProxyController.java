@@ -24,6 +24,12 @@ public class CourseProxyController {
         this.courseClient = courseClient;
     }
 
+    /**
+     * Function returns list of courses
+     * @param page : number of pages
+     * @param perPage : number of possible courses per page
+     * @return list of courses will null values removed
+     */
     @GetMapping
     public List<Course> listCourses(
         @RequestParam(defaultValue = "1") int page,

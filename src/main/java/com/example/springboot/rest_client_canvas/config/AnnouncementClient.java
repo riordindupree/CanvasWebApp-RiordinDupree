@@ -15,7 +15,6 @@ import org.springframework.web.service.annotation.HttpExchange;
  * AnnouncementClient
  */
 
-
 @HttpExchange("/api/v1")
 public interface AnnouncementClient {
 
